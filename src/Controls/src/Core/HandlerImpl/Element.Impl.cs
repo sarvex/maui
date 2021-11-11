@@ -18,6 +18,17 @@ namespace Microsoft.Maui.Controls
 			set => SetHandler(value);
 		}
 
+		internal Toolbar Toolbar
+		{
+			get => _toolbar;
+			set
+			{
+				_toolbar = value;
+				if (this is NavigationPage np)
+					_toolbar.ApplyNavigationPage(np);
+			}		
+		}
+
 		public event EventHandler<HandlerChangingEventArgs> HandlerChanging;
 		public event EventHandler HandlerChanged;
 
@@ -40,6 +51,8 @@ namespace Microsoft.Maui.Controls
 		}
 
 		IElementHandler _previousHandler;
+		private Toolbar _toolbar;
+
 		void SetHandler(IElementHandler newHandler)
 		{
 			if (newHandler == _handler)
