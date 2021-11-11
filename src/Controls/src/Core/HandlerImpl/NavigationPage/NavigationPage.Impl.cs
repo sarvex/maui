@@ -123,10 +123,10 @@ namespace Microsoft.Maui.Controls
 		void OnAppearing(object sender, EventArgs e)
 		{
 			// Update the Container level Toolbar with my Toolbar information
-			var toolbar = this.FindParentWith(x => x.Toolbar != null, true)?.Toolbar;
-
-			if (toolbar != null)
-				toolbar.ApplyNavigationPage(this);
+			if(this.FindParentWith(x => (x is IToolbarElement te && te.Toolbar != null), true) is IToolbarElement te)
+			{
+				te.Toolbar.ApplyNavigationPage(this);
+			}
 		}
 
 		// This is used for navigation events that don't effect the currently visible page

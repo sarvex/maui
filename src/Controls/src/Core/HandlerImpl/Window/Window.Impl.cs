@@ -12,7 +12,7 @@ using Microsoft.Maui.Controls.Xaml.Diagnostics;
 namespace Microsoft.Maui.Controls
 {
 	[ContentProperty(nameof(Page))]
-	public partial class Window : NavigableElement, IWindow, IVisualTreeElement
+	public partial class Window : NavigableElement, IWindow, IVisualTreeElement, IToolbarElement
 	{
 		public static readonly BindableProperty TitleProperty = BindableProperty.Create(
 			nameof(Title), typeof(string), typeof(Window), default(string?));
@@ -24,9 +24,12 @@ namespace Microsoft.Maui.Controls
 		ReadOnlyCollection<Element>? _logicalChildren;
 		List<IVisualTreeElement> _visualChildren;
 
+		Toolbar IToolbarElement.Toolbar => _toolBar;
+		Toolbar _toolBar;
+
 		public Window()
 		{
-			Toolbar = new Toolbar();
+			_toolBar = new Toolbar();
 			_visualChildren = new List<IVisualTreeElement>();
 			AlertManager = new AlertManager(this);
 			ModalNavigationManager = new ModalNavigationManager(this);

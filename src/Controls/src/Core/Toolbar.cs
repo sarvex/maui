@@ -6,6 +6,11 @@ using Microsoft.Maui.Graphics;
 
 namespace Microsoft.Maui.Controls
 {
+	internal interface IToolbarElement
+	{
+		Toolbar Toolbar { get;}
+	}
+
 	public class Toolbar : Microsoft.Maui.IElement
 	{
 		NavigationPage _currentNavigationPage;
