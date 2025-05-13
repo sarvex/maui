@@ -9,7 +9,7 @@
     <!-- NOTE: should eventually revert back to $(MicrosoftNETCoreAppRefPackageVersion) in .NET 7 -->
     <MicrosoftExtensionsPackageVersion>7.0.0</MicrosoftExtensionsPackageVersion>
     <MicrosoftExtensionsServicingPackageVersion>7.0.0</MicrosoftExtensionsServicingPackageVersion>
-    <SystemCodeDomPackageVersion>7.0.0</SystemCodeDomPackageVersion>
+    <SystemCodeDomPackageVersion>9.0.0</SystemCodeDomPackageVersion>
     <!-- xamarin/xamarin-android -->
     <MicrosoftAndroidSdkWindowsPackageVersion>33.0.26</MicrosoftAndroidSdkWindowsPackageVersion>
     <!-- xamarin/xamarin-macios -->
@@ -42,15 +42,15 @@
     <MicrosoftCodeAnalysisNetAnalyzersVersion>7.0.1</MicrosoftCodeAnalysisNetAnalyzersVersion>
     <MicrosoftCodeAnalysisPublicApiAnalyzersVersion>3.3.4</MicrosoftCodeAnalysisPublicApiAnalyzersVersion>
     <MicrosoftCodeAnalysisBannedApiAnalyzersVersion>3.3.4</MicrosoftCodeAnalysisBannedApiAnalyzersVersion>
-    <SystemNumericsVectorsVersion>4.5.0</SystemNumericsVectorsVersion>
-    <SystemMemoryPackageVersion>4.5.5</SystemMemoryPackageVersion>
-    <SystemBuffersPackageVersion>4.5.1</SystemBuffersPackageVersion>
+    <SystemNumericsVectorsVersion>4.6.0</SystemNumericsVectorsVersion>
+    <SystemMemoryPackageVersion>4.6.0</SystemMemoryPackageVersion>
+    <SystemBuffersPackageVersion>4.6.0</SystemBuffersPackageVersion>
     <SystemTextJsonPackageVersion>7.0.2</SystemTextJsonPackageVersion>
     <SystemTextEncodingsWebPackageVersion>7.0.0</SystemTextEncodingsWebPackageVersion>
     <MicrosoftBclAsyncInterfacesPackageVersion>7.0.0</MicrosoftBclAsyncInterfacesPackageVersion>
     <SystemIOUnmanagedMemoryStreamPackageVersion>4.3.0</SystemIOUnmanagedMemoryStreamPackageVersion>
     <SystemObjectModelPackageVersion>4.3.0</SystemObjectModelPackageVersion>
-    <SystemRuntimeCompilerServicesUnsafePackageVersion>6.0.0</SystemRuntimeCompilerServicesUnsafePackageVersion>
+    <SystemRuntimeCompilerServicesUnsafePackageVersion>6.1.0</SystemRuntimeCompilerServicesUnsafePackageVersion>
     <_MicrosoftWebWebView2Version>1.0.1722.45</_MicrosoftWebWebView2Version>
     <!-- GLIDE - the android maven artifact in /src/Core/AndroidNative/maui/build.gradle -->
     <!-- must be kept in sync with the binding library version to it here: -->
